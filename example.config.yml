@@ -1,0 +1,7 @@
+# Development environment
+development: # Default
+    password: my-store-password
+    theme_id: my-theme-id-number
+    store: my-store.myshopify.com
+    directory: build # Keep This
+    ignore_files: settings_data.json
