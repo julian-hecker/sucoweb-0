@@ -8,11 +8,11 @@
     "dev": "cross-env NODE_ENV=development webpack --mode development --progress --hide-modules --config=webpack.config.js",
     "prod": "cross-env NODE_ENV=production webpack --mode production --no-progress --hide-modules --config=webpack.config.js",
     "watch-files": "cross-env NODE_ENV=development webpack --mode production --watch --progress --hide-modules --config=webpack.config.js",
-    "watch-theme": "theme watch",
+    "watch-theme": "theme watch --allow-live",
     "production": "npm run prod && theme deploy --env=production --allow-live",
     "development": "npm run dev && theme deploy --env=development --allow-live",
     "pull": "theme get",
-    "push": "theme deploy",
+    "push": "theme deploy --allow-live",
     "watch": "concurrently \"npm:watch-files\" \"npm:watch-theme\""
   },
   "devDependencies": {
